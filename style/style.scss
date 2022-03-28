@@ -3,12 +3,7 @@
     margin: 0px;
     padding: 0px;
     font-family: sans-serif;
-}
-
-.batman {
-    height: 50px;
-    border-radius: 100px;
-    background-color: teal;
+    color: white;
 }
 
 .container {
@@ -17,8 +12,8 @@
 
     .header {
         grid-area: 1/2/2/3;
-        // margin: 10px;
         border: 1px solid #0c4a6e;
+        background-color: #0ea5e9;
 
         .search,
         .user {
@@ -36,6 +31,12 @@
 
         .header-bottom {
             align-items: center;
+
+            .batman {
+                height: 50px;
+                border-radius: 100px;
+                background-color: teal;
+            }
         }
 
         .mini-avatar {
@@ -72,6 +73,8 @@
         border: 1px solid #0c4a6e;
         width: 20vw;
         height: 100vh;
+        background-color: #0c4a6e;
+        color: white;
 
         .logo {
             display: flex;
@@ -111,6 +114,7 @@
         grid-template-columns: 3fr 1fr;
         padding: 20px;
         border: 1px solid black;
+        background-color: #e0f2fe;
 
         .cards {
             display: grid;
@@ -118,24 +122,44 @@
         }
 
         .card {
-            border: 1px solid red;
+            border: 1px solid black;
             height: 200px;
             margin: 15px;
             padding: 10px;
             text-align: center;
+            border-radius: 10px;
+            background-color: #0c4a6e;
+
+            .title {
+                font-size: 20px;
+                font-weight: 900;
+            }
+
+            .card-icons {
+                margin-top: 50px;
+                display: flex;
+                gap: 20px;
+                justify-content: flex-end;
+            }
         }
 
         .sub-sidebar {
             border: 1px solid #0c4a6e;
+            padding: 50px 0px;
 
             .announcements {
                 border: 1px solid green;
                 padding: 20px;
+                border-radius: 10px;
+                background-color: #0c4a6e;
+                margin-bottom: 20px;
             }
 
             .trending {
                 border: 1px solid green;
                 padding: 20px;
+                border-radius: 10px;
+                background-color: #0c4a6e;
             }
         }
 
